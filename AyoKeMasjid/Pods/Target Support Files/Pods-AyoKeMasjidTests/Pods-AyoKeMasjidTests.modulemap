@@ -1,0 +1,6 @@
+framework module Pods_AyoKeMasjidTests {
+  umbrella header "Pods-AyoKeMasjidTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
