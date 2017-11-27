@@ -11,6 +11,11 @@ import UIKit
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
+        
+        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+        backgroundImage.image = UIImage(named: "579794.jpg")
+        self.view.insertSubview(backgroundImage, at: 0)
+        
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }

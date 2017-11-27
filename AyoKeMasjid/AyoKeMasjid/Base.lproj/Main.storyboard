@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--MOSQUE-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AyoKeMasjid" customModuleProvider="target" sceneMemberID="viewController">
@@ -20,13 +20,13 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="BOE-wF-Jof"/>
+                    <tabBarItem key="tabBarItem" title="MOSQUE" image="mosque" id="BOE-wF-Jof"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="721" y="-528"/>
         </scene>
-        <!--Mosque-->
+        <!--Location-->
         <scene sceneID="U6x-KW-da2">
             <objects>
                 <viewController id="QBw-Mb-IHc" customClass="MasjidViewController" customModule="AyoKeMasjid" customModuleProvider="target" sceneMemberID="viewController">
@@ -51,7 +51,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nzE-Jg-aLs"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Mosque" image="mosque" selectedImage="mosque" id="ee9-xL-TxP"/>
+                    <tabBarItem key="tabBarItem" title="Location" image="placeholder" selectedImage="placeholder" id="ee9-xL-TxP"/>
                     <connections>
                         <outlet property="mapView" destination="FVK-jw-bOW" id="T7j-nJ-s7E"/>
                     </connections>
@@ -101,7 +101,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="AcS-UV-Lk6"/>
-                        <segue destination="mET-T7-74c" kind="relationship" relationship="viewControllers" id="1u0-UL-fpY"/>
                         <segue destination="QBw-Mb-IHc" kind="relationship" relationship="viewControllers" id="FcD-L5-xcM"/>
                     </connections>
                 </tabBarController>
@@ -109,24 +108,9 @@
             </objects>
             <point key="canvasLocation" x="-342.39999999999998" y="144.82758620689657"/>
         </scene>
-        <!--Item-->
-        <scene sceneID="qFs-je-9lM">
-            <objects>
-                <viewController id="mET-T7-74c" customClass="ViewController" customModule="AyoKeMasjid" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="fUx-Vq-GUJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="Z4t-XT-HU6"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="2IU-UD-KRq"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Rfx-Ne-PJL" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="721" y="214"/>
-        </scene>
     </scenes>
     <resources>
         <image name="mosque" width="32" height="32"/>
+        <image name="placeholder" width="32" height="32"/>
     </resources>
 </document>
