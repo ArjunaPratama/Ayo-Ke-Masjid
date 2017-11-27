@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Item-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AyoKeMasjid" customModuleProvider="target" sceneMemberID="viewController">
@@ -20,10 +20,45 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="BOE-wF-Jof"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="721" y="-528"/>
+        </scene>
+        <!--Mosque-->
+        <scene sceneID="U6x-KW-da2">
+            <objects>
+                <viewController id="QBw-Mb-IHc" customClass="MasjidViewController" customModule="AyoKeMasjid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eVp-3h-Kyr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="FVK-jw-bOW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="7Ys-Ga-GXT"/>
+                                    <constraint firstAttribute="height" constant="618" id="Ebl-tL-dYk"/>
+                                </constraints>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FVK-jw-bOW" firstAttribute="trailing" secondItem="nzE-Jg-aLs" secondAttribute="trailing" id="Ebo-eb-S62"/>
+                            <constraint firstItem="FVK-jw-bOW" firstAttribute="top" secondItem="eVp-3h-Kyr" secondAttribute="top" id="Lyf-sw-Ge3"/>
+                            <constraint firstItem="FVK-jw-bOW" firstAttribute="bottom" secondItem="nzE-Jg-aLs" secondAttribute="bottom" id="fQs-rz-yTD"/>
+                            <constraint firstItem="FVK-jw-bOW" firstAttribute="leading" secondItem="nzE-Jg-aLs" secondAttribute="leading" id="vPz-GI-mto"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nzE-Jg-aLs"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Mosque" image="mosque" selectedImage="mosque" id="ee9-xL-TxP"/>
+                    <connections>
+                        <outlet property="mapView" destination="FVK-jw-bOW" id="T7j-nJ-s7E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J6I-dO-zeo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="648.79999999999995" y="984.55772113943033"/>
         </scene>
         <!--Item-->
         <scene sceneID="sUh-oH-cty">
@@ -52,7 +87,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TWl-Ls-56N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="721" y="1096"/>
+            <point key="canvasLocation" x="799" y="1770"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="rTG-2q-3ok">
@@ -60,20 +95,21 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="fBH-iG-kad" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="edA-Xl-csY">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="modal" id="jFf-zZ-eaP"/>
-                        <segue destination="mET-T7-74c" kind="modal" id="cZj-he-9Rb"/>
-                        <segue destination="NwP-dd-lW4" kind="modal" id="pTt-zI-dcz"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="AcS-UV-Lk6"/>
+                        <segue destination="mET-T7-74c" kind="relationship" relationship="viewControllers" id="1u0-UL-fpY"/>
+                        <segue destination="QBw-Mb-IHc" kind="relationship" relationship="viewControllers" id="FcD-L5-xcM"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0hV-oM-Ctb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-342.39999999999998" y="144.82758620689657"/>
         </scene>
-        <!--View Controller-->
+        <!--Item-->
         <scene sceneID="qFs-je-9lM">
             <objects>
                 <viewController id="mET-T7-74c" customClass="ViewController" customModule="AyoKeMasjid" customModuleProvider="target" sceneMemberID="viewController">
@@ -83,10 +119,14 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Z4t-XT-HU6"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="2IU-UD-KRq"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rfx-Ne-PJL" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="721" y="214"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="mosque" width="32" height="32"/>
+    </resources>
 </document>
