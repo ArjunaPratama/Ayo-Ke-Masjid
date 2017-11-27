@@ -12,7 +12,7 @@
 		87C8D73E02E27811000077EF /* Pods_AyoKeMasjid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93CFE583F6A981995B4F14BB /* Pods_AyoKeMasjid.framework */; };
 		DC15BB971FCBE12C005F783B /* MasjidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC15BB961FCBE12C005F783B /* MasjidViewController.swift */; };
 		DC15BB991FCBE144005F783B /* Masjid.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC15BB981FCBE144005F783B /* Masjid.swift */; };
-		DC15BB9B1FCC1AF2005F783B /* 579794.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC15BB9A1FCC1AF2005F783B /* 579794.jpg */; };
+		DC15BBA51FCC549C005F783B /* 579794.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC15BBA41FCC549C005F783B /* 579794.jpg */; };
 		DC2BF8291FC91F4D009CF16A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2BF8281FC91F4D009CF16A /* AppDelegate.swift */; };
 		DC2BF82B1FC91F4D009CF16A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2BF82A1FC91F4D009CF16A /* ViewController.swift */; };
 		DC2BF82E1FC91F4D009CF16A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC2BF82C1FC91F4D009CF16A /* Main.storyboard */; };
@@ -51,7 +51,7 @@
 		D0E12266F2D585D91816F7F3 /* Pods-AyoKeMasjid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AyoKeMasjid.release.xcconfig"; path = "Pods/Target Support Files/Pods-AyoKeMasjid/Pods-AyoKeMasjid.release.xcconfig"; sourceTree = "<group>"; };
 		DC15BB961FCBE12C005F783B /* MasjidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasjidViewController.swift; sourceTree = "<group>"; };
 		DC15BB981FCBE144005F783B /* Masjid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Masjid.swift; sourceTree = "<group>"; };
-		DC15BB9A1FCC1AF2005F783B /* 579794.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 579794.jpg; path = ../../../../../Downloads/579794.jpg; sourceTree = "<group>"; };
+		DC15BBA41FCC549C005F783B /* 579794.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 579794.jpg; path = ../../../../../Downloads/579794.jpg; sourceTree = "<group>"; };
 		DC2BF8251FC91F4D009CF16A /* AyoKeMasjid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AyoKeMasjid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC2BF8281FC91F4D009CF16A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC2BF82A1FC91F4D009CF16A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -145,7 +145,7 @@
 		DC2BF8271FC91F4D009CF16A /* AyoKeMasjid */ = {
 			isa = PBXGroup;
 			children = (
-				DC15BB9A1FCC1AF2005F783B /* 579794.jpg */,
+				DC15BBA41FCC549C005F783B /* 579794.jpg */,
 				DC2BF8281FC91F4D009CF16A /* AppDelegate.swift */,
 				DC2BF82A1FC91F4D009CF16A /* ViewController.swift */,
 				DC2BF82C1FC91F4D009CF16A /* Main.storyboard */,
@@ -295,7 +295,7 @@
 			files = (
 				DC2BF8361FC91F4D009CF16A /* LaunchScreen.storyboard in Resources */,
 				DC2BF8331FC91F4D009CF16A /* Assets.xcassets in Resources */,
-				DC15BB9B1FCC1AF2005F783B /* 579794.jpg in Resources */,
+				DC15BBA51FCC549C005F783B /* 579794.jpg in Resources */,
 				DC2BF82E1FC91F4D009CF16A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
