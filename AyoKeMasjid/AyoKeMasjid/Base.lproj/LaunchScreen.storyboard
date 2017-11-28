@@ -13,6 +13,9 @@
         <array key="Baskerville.ttc">
             <string>Baskerville</string>
         </array>
+        <array key="Verdana.ttf">
+            <string>Verdana</string>
+        </array>
     </customFonts>
     <scenes>
         <!--View Controller-->
@@ -40,16 +43,30 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The List Mosque In Jakarta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3I0-6a-EHJ">
+                                <rect key="frame" x="16" y="582" width="328" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="328" id="MWN-Jz-FYi"/>
+                                    <constraint firstAttribute="height" constant="58" id="fct-Iv-sG2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="17"/>
+                                <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3I0-6a-EHJ" secondAttribute="bottom" constant="27" id="6et-VX-uhx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xu0-H1-pR0" secondAttribute="bottom" constant="591" id="9Mg-sd-lgb"/>
+                            <constraint firstItem="3I0-6a-EHJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="9c0-eY-dDB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3I0-6a-EHJ" secondAttribute="trailing" constant="31" id="HAT-Ri-gi8"/>
                             <constraint firstItem="KXD-zo-jkr" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="aeu-kt-8CL"/>
                             <constraint firstItem="KXD-zo-jkr" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="cFu-G7-BBZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xu0-H1-pR0" secondAttribute="trailing" constant="31" id="igs-P7-WTI"/>
                             <constraint firstItem="xu0-H1-pR0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="162" id="l3p-zJ-Ckr"/>
                             <constraint firstItem="KXD-zo-jkr" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="mOH-Es-ezb"/>
                             <constraint firstItem="xu0-H1-pR0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nKo-vN-zW1"/>
+                            <constraint firstItem="3I0-6a-EHJ" firstAttribute="top" secondItem="xu0-H1-pR0" secondAttribute="bottom" constant="506" id="q33-w3-uqW"/>
                             <constraint firstItem="KXD-zo-jkr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="xlK-iH-vE8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
